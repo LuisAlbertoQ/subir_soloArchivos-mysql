@@ -22,9 +22,9 @@ public class TesisDocumentoController {
     private TesisDocumentoService tesisDocumentoService;
 
     @PostMapping("/subir")
-    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file, @RequestParam(value = "replace", defaultValue = "false") boolean replace) {
         try {
-            tesisDocumentoService.saveFile(file);
+            tesisDocumentoService.saveFile(file, replace);
             return ResponseEntity.status(HttpStatus.OK).body("Archivo Subido Exitosamente!");
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error en Subir Archivo :(");

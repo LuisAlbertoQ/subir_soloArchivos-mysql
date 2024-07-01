@@ -1,0 +1,9 @@
+Alex: Hey, Lee!
+Lee: Hi, Alex. How are you?
+Alex: I'm fine, thanks. And you?
+Lee: Very well, thanks you.
+Alex: What are you doing here?
+Lee: I'm buying fruits, and you?
+Alex: I just walk here
+Lee: ooh... well, I have to hurry to buy. see you later.
+Alex: ok, bye
